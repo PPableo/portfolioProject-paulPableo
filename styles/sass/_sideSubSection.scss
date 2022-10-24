@@ -1,0 +1,147 @@
+@use "./setup";
+
+.sideSubSection {
+    margin-bottom: 15px;
+    max-height: 112px;
+    transition: 0.5s ease-in-out;
+    position: sticky;
+    top: 60px;
+    max-height: max-content;
+    height: 100%;
+    margin-bottom: 0;
+    padding-top: 40px;
+    z-index: 1;
+    width: 100%;
+    // -webkit-animation: fade 1s ease-in 1s;
+    // animation: fade 2s ease-in 2s;
+    // animation-fill-mode: none;
+    // -webkit-animation-fill-mode: forwards;
+    // animation-fill-mode: forwards;
+    // pointer-events: none;
+    // opacity: 0;
+}
+
+.profileSection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .profilePic img {
+        width: 150px;
+        background: linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%);
+        border-radius: 20px;
+    }
+
+    .profileContact .title {
+        color: hsl(0, 0%, 100%);
+        background: hsl(240, 1%, 17%);
+        font-size: 1.4rem;
+        font-weight: 300;
+        width: max-content;
+        padding: 3px 12px;
+        border-radius: 8px;
+    }
+
+    .profileContact .name {
+        color: hsl(0, 0%, 98%);
+        font-size: 2.6rem;
+        font-weight: 500;
+        letter-spacing: -0.25px;
+        margin-bottom: 10px;
+        color: hsl(0, 0%, 98%);
+    }
+}
+
+
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background: hsl(0, 0%, 22%);
+    margin: 16px 0;
+}
+
+.iconBox {
+    position: relative;
+    background: hsl(240, 1%, 17%);
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: hsl(346, 91%, 50%);
+    box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+    z-index: 1;
+    text-align: center;
+}
+
+.contactsList {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 0;
+
+    address {
+        color: hsla(0, 0%, 84%, 0.7);
+        font-size: 1.5rem;
+    }
+
+    a {
+        color: hsl(0deg, 0%, 84%);
+        font-size: 1.5rem;
+    }
+
+    .contactItem {
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .contactInfo {
+        max-width: calc(100% - 46px);
+        width: calc(100% - 46px);
+    }
+
+    .contactTitle {
+        color: hsla(0, 0%, 84%, 0.7);
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+    }
+}
+
+
+
+
+.iconBox::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: hsl(240, 2%, 13%);
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.socialList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+}
+
+.socialItem .socialLink {
+    color: hsla(0, 0%, 84%, 0.7);
+    font-size: 18px;
+}
+
+
+.socialItem .socialLink:hover {
+    color: hsl(0, 0%, 84%);
+}

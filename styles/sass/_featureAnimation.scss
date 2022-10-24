@@ -1,0 +1,24 @@
+@use "./setup";
+
+h1 {
+    font-size: 10rem;
+    background: #f9c667;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #f9c667 0%, #f79621 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #f9c667 0%, #f79621 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #f9c667 0%, #f79621 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9c667', endColorstr='#f79621', GradientType=1);
+    /* IE6-9 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: fade 4s ease-in 3.5s;
+    animation-fill-mode: forwards;  
+    pointer-events: none;
+    opacity: 0;
+}

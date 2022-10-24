@@ -1,0 +1,107 @@
+@use "./setup";
+
+// <!-- ABOUT ME & SKILLS -->
+
+p {
+    color: hsl(0, 0%, 84%);
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.skillSet {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        width: 15%;
+        font-size: 8rem;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+        position: relative;
+        background: linear-gradient(to bottom right,
+                hsla(240, 1%, 18%, 0.251) 0%,
+                hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+        padding: 20px;
+        border-radius: 14px;
+        box-shadow: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+        z-index: 1;
+    }
+}
+
+i {
+    width: 100%;
+    height: auto;
+    display: block;
+    color: #FF9801;
+}
+
+// <!-- PROJECTS SECTION -->
+
+.projectsList {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    margin: 0 -15px;
+    padding: 25px 15px;
+    padding-bottom: 35px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+}
+
+.scrollbar {
+    scrollbar-color: #FF9801 #2B2B2C;
+    border-radius: 5px;
+    border-radius: 5px;
+}
+
+.projectsItem {
+    min-width: 100%;
+    scroll-snap-align: center;
+
+    .contentCard {
+        position: relative;
+        background: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
+        padding: 15px;
+        padding-top: 45px;
+        border-radius: 14px;
+        box-shadow: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+        cursor: pointer;
+        z-index: 1;
+    }
+    
+    .projectDescription {
+        color: hsl(0, 0%, 84%);
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1.6;
+        display: -webkit-box;
+        line-clamp: 4;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+// .projectTitle {
+//     padding-left: 250px;
+//     width: min-content;
+//     margin: 0;
+// }
+
+.projectImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+    transform: translate(15px, -25px);
+    background: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
+    img {
+        width: 200px;
+        border-radius: 14px;
+    }
+}
