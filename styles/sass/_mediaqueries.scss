@@ -1,0 +1,85 @@
+@use "./setup";
+@use "./general";
+@use "./sideSubSection";
+@use "./aboutMe";
+@use "./featureAnimation";
+@use "./introAnimation";
+
+@media (max-width: 1050px) {
+
+    /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+    .wrapper {
+        width: min(80%, 1500px);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        transition: 2s ease-in-out;
+    }
+
+    .contactsList {
+        display: flex;
+        padding: 0;
+        transition: 2s ease-in-out;
+        overflow: hidden;
+    }
+
+    .contactsList .contactItem {
+        min-width: 24%;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        transition: 2s ease-in-out;
+      }
+
+    }
+    
+    @media (max-width: 820px) {
+        /* all of our styles for TABLET devices will go within this breakpoint */
+        h2 {
+            font-size: 4rem;
+            margin: 0;
+            transition: 2s ease-in-out;
+        }
+        
+
+        .contactInfo {
+            transition: 2s ease-in-out;
+            display: none;
+    }
+
+    .skillSet li {
+        width: 15%;
+        font-size: 4rem;
+        text-align: center;
+        position: relative;
+        background: -webkit-gradient(linear, left top, right bottom, from(hsla(240deg, 1%, 18%, 0.251)), to(hsla(240deg, 2%, 11%, 0))), hsl(240deg, 2%, 13%);
+        background: linear-gradient(to bottom right, hsla(240deg, 1%, 18%, 0.251) 0%, hsla(240deg, 2%, 11%, 0) 100%), hsl(240deg, 2%, 13%);
+        padding: 20px;
+        border-radius: 14px;
+        -webkit-box-shadow: 0 16px 30px hsla(0deg, 0%, 0%, 0.25);
+        box-shadow: 0 16px 30px hsla(0deg, 0%, 0%, 0.25);
+        z-index: 1;
+        gap: 5px;
+        transition: 2s ease-in-out;
+      }
+
+}   
+
+@media (max-width: 500px) {
+    /* all of our styles for MOBILE devices will go within this breakpoint */
+    .skillSet li {
+        width: 21%;
+        font-size: 4rem;
+        text-align: center;
+        position: relative;
+        background: -webkit-gradient(linear, left top, right bottom, from(hsla(240deg, 1%, 18%, 0.251)), to(hsla(240deg, 2%, 11%, 0))), hsl(240deg, 2%, 13%);
+        background: linear-gradient(to bottom right, hsla(240deg, 1%, 18%, 0.251) 0%, hsla(240deg, 2%, 11%, 0) 100%), hsl(240deg, 2%, 13%);
+        padding: 20px;
+        border-radius: 14px;
+        -webkit-box-shadow: 0 16px 30px hsla(0deg, 0%, 0%, 0.25);
+        box-shadow: 0 16px 30px hsla(0deg, 0%, 0%, 0.25);
+        z-index: 1;
+        gap: 5px;
+        transition: 2s ease-in-out;
+      }
+}

@@ -16,15 +16,19 @@
 
 <body>
     <article class="introAnimation">
+        <article>
+            <audio autoplay src="./assets/Soulicious - Dyalla-[AudioTrimmer.com]3.mp3">
+            </audio>
+        </article>
         <div class="textWrapper">
             <div class="text1 text">Philocalist </div>
             <div class="text2 text">Idealistic </div>
             <div class="text3 text">Introspective</div>
-            <div class="text4 text">Freelancer</div>
-            <div class="text5 text">Designer </div>
+            <div class="text4 text">Designer</div>
+            <div class="text5 text">Frontend </div>
             <div class="text6 text">Developer</div>
-            <div class="text7 text">Designer </div>
-            <div class="text8 text">Freelancer</div>
+            <div class="text7 text">Frontend </div>
+            <div class="text8 text">Designer</div>
             <div class="text9 text">Introspective</div>
             <div class="text10 text">Idealistic </div>
             <div class="text11 text">Philocalist </div>
@@ -41,15 +45,7 @@
                     <p class="title">Frontend Developer</p>
                 </div>
             </div>
-            <!-- FEATURE  -->
-            <!-- <button class="info_more-btn" data-sidebar-btn>
-                <span>Show Contacts</span>
-
-                <ion-icon name="list-sharp"></ion-icon>
-            </button>
-            </div> -->
-            <!-- FEATURE  -->
-            <div class="sidebar-info_more">
+            <div class="SubSectionInfo">
                 <div class="separator"></div>
 
                 <ul class="contactsList">
@@ -59,7 +55,7 @@
                         </div>
                         <div class="contactInfo">
                             <p class="contactTitle">Email</p>
-                            <a href="mailto:pableop@gmail.com" vclass="contactLink">pableop@gmail.com</a>
+                            <a href="mailto:pableop@gmail.com" class="contactLink">pableop@gmail.com</a>
                         </div>
                     </li>
                     <li class="contactItem">
@@ -68,7 +64,7 @@
                         </div>
                         <div class="contactInfo">
                             <p class="contactTitle">Phone</p>
-                            <a href="tel:+1" class="contactLink">(647) 453-8674</a>
+                            <a href="tel:+1" class="contactLink">(647) XXX-XXXX</a>
                         </div>
                     </li>
                     <li class="contactItem">
@@ -77,7 +73,7 @@
                         </div>
                         <div class="contactInfo">
                             <p class="contactTitle">Resume</p>
-                            <a href="" download="Pableo Resume" class="contactLink">Download Resume</a>
+                            <a href="" download="./assets/Paul's Avatar.png" class="contactLink">Download Resume</a>
                         </div>
                         </a>
                     </li>
@@ -104,7 +100,7 @@
                         </a>
                     </li>
                     <li class="socialItem">
-                        <a href="https://twitter.com" class="socialLink">
+                        <a href="https://www.instagram.com/pableop/" class="socialLink">
                             <i class="devicon-twitter-original"></i>
                         </a>
                     </li>
@@ -114,22 +110,21 @@
         <nav class="upperNav">
             <ul class="upperNav-list">
                 <li class="upperNav-item">
-                    <button class="upperNav-link active">About</button>
+                    <a class="upperNav-link" href="#About">About</a>
                 </li>
-
                 <li class="upperNav-item">
-                    <button class="upperNav-link">Portfolio</button>
+                    <a class="upperNav-link" href="#Projects">Portfolio</a>
                 </li>
-
-                <li class="upperNav-item">
-                    <button class="upperNav-link">Contact</button>
-                </li>
+                <!-- <li class="upperNav-item">
+                    <a class="upperNav-link">Contact</a>
+                </li> -->
             </ul>
         </nav>
-        <section class="aboutME">
+        <section class="aboutME" id="About">
             <header>
                 <h2>about me</h2>
             </header>
+            <div class="separator"></div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis expedita accusamus ea officia
                 assumenda blanditiis quidem iste molestiae placeat eum. At quos nulla commodi voluptatibus!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolores suscipit velit pariatur accusantium
@@ -201,20 +196,27 @@
                     </li>
                 </ul>
             </div>
-            <section class="projectSection">
+            <section class="projectSection" id="Projects">
                 <h3 class="projectHeader">projects</h3>
 
                 <ul class="projectsList scrollbar">
                     <li class="projectsItem">
                         <div class="contentCard">
                             <figure class="projectImg">
-                                <img src="./assets/theRestaurentMallProjectImg.png" alt="The Restaurant Mall HomePage" width="60" />
+                                <img src="./assets/theRestaurentMallProjectImg.png" alt="The Restaurant Mall HomePage"
+                                    width="200px" />
                             </figure>
 
                             <h4 class="projectTitle">
                                 The Restaurant Mall
                             </h4>
-
+                            <div class="projectLinks">
+                                <a href="https://github.com/PPableo/theRestaurantMallProject1-junoCollege"
+                                    class="socialLink">
+                                    <i class="devicon-github-original"></i>
+                                </a>
+                                <a href="https://project1assignmet2-paulpableo.netlify.app">live</a>
+                            </div>
                             <div class="projectDescription">
                                 <p>
                                     PSD conversion made from client brief and design files using floats for layout.
@@ -227,13 +229,18 @@
                     <li class="projectsItem">
                         <div class="contentCard">
                             <figure class="projectImg">
-                                <img src="./assets/images/avatar-2.png" alt="Weather App HomePage"/>
+                                <img src="./assets/projectWeatherImg.png" width="200px" alt="Weather App HomePage" />
                             </figure>
 
                             <h4 class="projectTitle">
-                                Weather App Api
+                                OpenWeather App
                             </h4>
-
+                            <div class="projectLinks">
+                                <a href="https://github.com/PPableo/weatherAppProject2-junoCollege" class="socialLink">
+                                    <i class="devicon-github-original"></i>
+                                </a>
+                                <a href="https://admirable-dragon-354ae1.netlify.app">live</a>
+                            </div>
                             <div class="projectDescription">
                                 <p>
                                     General Design and API implementation
@@ -245,13 +252,20 @@
                     <li class="projectsItem">
                         <div class="contentCard">
                             <figure class="projectImg">
-                                <img src="./assets/images/avatar-3.png" alt="Wine Pairing App HomePage"/>
+                                <img src=".//assets/projectSommelierImg.jpg" width="200px"
+                                    alt="Wine Pairing App HomePage" />
                             </figure>
 
                             <h4 class="projectTitle">
-                                Wine Pairing App
+                                Javascript Sommelier
                             </h4>
-
+                            <div class="projectLinks">
+                                <a href="https://github.com/Juno-group-proj-two/paul-matt-trist-proj-2"
+                                    class="socialLink">
+                                    <i class="devicon-github-original"></i>
+                                </a>
+                                <a href="https://darling-malasada-522ed5.netlify.app/">live</a>
+                            </div>
                             <div class="projectDescription">
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi perspiciatis hic
@@ -270,13 +284,17 @@
                     <li class="projectsItem">
                         <div class="contentCard">
                             <figure class="projectImg">
-                                <img src="./assets/projectSpacesImg.jpg" alt="Spaces HomePage"/>
+                                <img src="./assets/projectSpacesImg.jpg" width="200px" alt="Spaces HomePage" />
                             </figure>
-
                             <h4 class="projectTitle">
                                 Spaces
                             </h4>
-
+                            <div class="projectLinks">
+                                <a href="https://github.com/PPableo" class="socialLink">
+                                    <i class="devicon-github-original"></i>
+                                </a>
+                                <a href="https://project1assignmet2-paulpableo.netlify.app">live</a>
+                            </div>
                             <div class="projectDescription">
                                 <p>
                                     PSD conversion and made from client brief and design files using floats for layout.
@@ -288,7 +306,116 @@
                 </ul>
             </section>
         </section>
+        <!-- <section class="portfolioSection">
+            <h3 class="portfolioHeader">portfolio</h3>
+
+                <ul class="portfolioList">
+                    <li class="portfolioItem">
+                        <div class="contentCard">
+                            <figure class="projectImg">
+                                <img src="./assets/theRestaurentMallProjectImg.png" alt="The Restaurant Mall HomePage"
+                                    width="200px" />
+                            </figure>
+
+                            <h4 class="projectTitle">
+                                The Restaurant Mall
+                            </h4>
+                            <div class="projectLinks">
+                                <a href="https://github.com/PPableo/theRestaurantMallProject1-junoCollege"
+                                    class="socialLink">
+                                    <i class="devicon-github-original"></i>
+                                </a>
+                                <a href="https://project1assignmet2-paulpableo.netlify.app">live</a>
+                            </div>
+                            <div class="projectDescription">
+                                <p>
+                                    PSD conversion made from client brief and design files using floats for layout.
+                                    Responsive across devices.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="projectsItem">
+                        <div class="contentCard">
+                            <figure class="projectImg">
+                                <img src="./assets/projectWeatherImg.png" width="200px" alt="Weather App HomePage" />
+                            </figure>
+
+                            <h4 class="projectTitle">
+                                OpenWeather App
+                            </h4>
+                            <div class="projectLinks">
+                                <a href="https://github.com/PPableo/weatherAppProject2-junoCollege" class="socialLink">
+                                    <i class="devicon-github-original"></i>
+                                </a>
+                                <a href="https://admirable-dragon-354ae1.netlify.app">live</a>
+                            </div>
+                            <div class="projectDescription">
+                                <p>
+                                    General Design and API implementation
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="projectsItem">
+                        <div class="contentCard">
+                            <figure class="projectImg">
+                                <img src=".//assets/projectSommelierImg.jpg" width="200px"
+                                    alt="Wine Pairing App HomePage" />
+                            </figure>
+
+                            <h4 class="projectTitle">
+                                Javascript Sommelier
+                            </h4>
+                            <div class="projectLinks">
+                                <a href="https://github.com/Juno-group-proj-two/paul-matt-trist-proj-2" class="socialLink">
+                                    <i class="devicon-github-original"></i>
+                                </a>
+                                <a href="https://darling-malasada-522ed5.netlify.app/">live</a>
+                            </div>
+                            <div class="projectDescription">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi perspiciatis hic
+                                    dolore
+                                    nisi vitae qui. Eos necessitatibus quod cupiditate perspiciatis, qui iste fugiat
+                                    dicta
+                                    nisi aperiam laborum sed officiis mollitia esse nostrum minima! Optio est
+                                    dignissimos
+                                    doloribus ducimus architecto, culpa sit deserunt, nisi enim mollitia beatae aliquam
+                                    ullam cumque eligendi!
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="projectsItem">
+                        <div class="contentCard">
+                            <figure class="projectImg">
+                                <img src="./assets/projectSpacesImg.jpg" width="200px" alt="Spaces HomePage" />
+                            </figure>
+                            <h4 class="projectTitle">
+                                Spaces
+                            </h4>
+                            <div class="projectLinks">
+                                <a href="https://github.com/PPableo" class="socialLink">
+                                    <i class="devicon-github-original"></i>
+                                </a>
+                                <a href="https://project1assignmet2-paulpableo.netlify.app">live</a>
+                            </div>
+                            <div class="projectDescription">
+                                <p>
+                                    PSD conversion and made from client brief and design files using floats for layout.
+                                    Responsive across devices.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+        </section> -->
     </main>
+    <script src="./js/scripts.js"></script>
 </body>
 
 </html>
