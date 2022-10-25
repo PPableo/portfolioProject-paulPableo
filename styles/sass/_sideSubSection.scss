@@ -1,5 +1,7 @@
 @use "./setup";
 
+// <!-- INFO CARD -->
+
 .sideSubSection {
     margin-bottom: 15px;
     max-height: 112px;
@@ -12,13 +14,6 @@
     padding-top: 40px;
     z-index: 1;
     width: 100%;
-    // -webkit-animation: fade 1s ease-in 1s;
-    // animation: fade 2s ease-in 2s;
-    // animation-fill-mode: none;
-    // -webkit-animation-fill-mode: forwards;
-    // animation-fill-mode: forwards;
-    // pointer-events: none;
-    // opacity: 0;
 }
 
 .profileSection {
@@ -115,18 +110,6 @@
     }
 }
 
-
-
-
-.iconBox::before {
-    content: "";
-    position: absolute;
-    inset: 1px;
-    background: hsl(240, 2%, 13%);
-    border-radius: inherit;
-    z-index: -1;
-}
-
 .socialList {
     display: flex;
     justify-content: center;
@@ -139,9 +122,4 @@
 .socialItem .socialLink {
     color: hsla(0, 0%, 84%, 0.7);
     font-size: 18px;
-}
-
-
-.socialItem .socialLink:hover {
-    color: hsl(0, 0%, 84%);
 }

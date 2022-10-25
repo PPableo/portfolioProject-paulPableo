@@ -1,5 +1,7 @@
 @use "./setup";
 
+// <!-- GENERAL INTRO ANIMATION SETUP -->
+
 html,
 body {
     margin: 0;
@@ -7,6 +9,8 @@ body {
     width: 100%;
     height: 100vh;
 }
+
+// <!-- INTRO ANIMATION -->
 
 .introAnimation {
     width: 100%;
