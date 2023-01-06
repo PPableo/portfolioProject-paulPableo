@@ -85,7 +85,7 @@ i {
         line-clamp: 4;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
-        overflow: hidden;
+        // overflow: hidden;
     }
 }
 
@@ -101,6 +101,10 @@ i {
     justify-content: center;
     gap: 20px;
     text-transform: uppercase;
+    &:hover {
+        transform: scale(150%);
+        transition: 0.5s;
+    }
 }
 
 .projectImg {
@@ -111,10 +115,14 @@ i {
     transform: translate(15px, -25px);
     border: 2px solid hsl(0deg, 0%, 22%);
     border-radius: 14px;
-
     img {
         width: 240px;
         height: 150px;
         border-radius: 14px;
+        &:hover {
+            transition: 0.5s;
+            background: #ff9000;
+            box-shadow: 0 0 10px #ff9000, 0 0 10px #ff9000, 0 0 10px #ff9000, 0 0 10px #ff9000;
+        }
     }
 }

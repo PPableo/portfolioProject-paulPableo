@@ -53,16 +53,17 @@ a {
     text-decoration: none;
     color: hsla(0deg, 0%, 84%, 0.7);
     
-    li {
-        list-style: none;
-    }
-    
     button {
         font: inherit;
         background: none;
         border: none;
         text-align: left;
         cursor: pointer;
+    }
+}
+
+li {
+    list-style: none;
 }
 
 img,
