@@ -632,9 +632,6 @@ i {
   font-weight: 300;
   line-height: 1.6;
   display: -webkit-box;
-  line-clamp: 10;
-  -webkit-line-clamp: 10;
-  -webkit-box-orient: vertical;
 }
 
 .projectTitle {
@@ -1000,7 +997,7 @@ body {
   padding: 0;
   border: 1px solid hsl(0deg, 0%, 22%);
   border-radius: 20px;
-  width: 50%;
+  width: 100%;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
