@@ -97,13 +97,15 @@ main {
 }
 
 .sideSubSection,
-.aboutME {
+.aboutME,
+.projectSection {
     background: hsl(240, 2%, 12%);
     border: 1px solid hsl(0, 0%, 22%);
     border-radius: 20px;
     padding: 20px;
     box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
     z-index: 1;
+    margin: 10px;
 }
 
 // <!-- NAVIGATION BAR -->

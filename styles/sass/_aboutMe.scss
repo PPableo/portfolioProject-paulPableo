@@ -40,6 +40,9 @@ i {
 }
 
 // <!-- PROJECTS SECTION -->
+// .projectSection {
+//     height: 20vh;
+// }
 
 .projectsList {
     display: flex;
@@ -53,6 +56,12 @@ i {
     scroll-behavior: smooth;
     overscroll-behavior-inline: contain;
     scroll-snap-type: inline mandatory;
+    // height: 13VH;
+    &.open {
+        display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+    }
 }
 
 .scrollbar {
@@ -82,8 +91,8 @@ i {
         font-weight: 300;
         line-height: 1.6;
         display: -webkit-box;
-        line-clamp: 4;
-        -webkit-line-clamp: 2;
+        line-clamp: 10;
+        -webkit-line-clamp: 10;
         -webkit-box-orient: vertical;
         // overflow: hidden;
     }

@@ -330,7 +330,8 @@ main {
 }
 
 .sideSubSection,
-.aboutME {
+.aboutME,
+.projectSection {
   background: hsl(240deg, 2%, 12%);
   border: 1px solid hsl(0deg, 0%, 22%);
   border-radius: 20px;
@@ -338,6 +339,7 @@ main {
   -webkit-box-shadow: -4px 8px 24px hsla(0deg, 0%, 0%, 0.25);
           box-shadow: -4px 8px 24px hsla(0deg, 0%, 0%, 0.25);
   z-index: 1;
+  margin: 10px;
 }
 
 .upperNav {
@@ -474,7 +476,7 @@ main {
   color: hsl(346deg, 91%, 50%);
   -webkit-box-shadow: -4px 8px 24px hsla(0deg, 0%, 0%, 0.25);
           box-shadow: -4px 8px 24px hsla(0deg, 0%, 0%, 0.25);
-  z-index: 1;
+  z-index: -1;
   text-align: center;
 }
 
@@ -591,6 +593,16 @@ i {
   -ms-scroll-snap-type: inline mandatory;
       scroll-snap-type: inline mandatory;
 }
+.projectsList.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: hidden;
+}
 
 .scrollbar {
   scrollbar-color: #FF9801 #2B2B2C;
@@ -620,8 +632,8 @@ i {
   font-weight: 300;
   line-height: 1.6;
   display: -webkit-box;
-  line-clamp: 4;
-  -webkit-line-clamp: 2;
+  line-clamp: 10;
+  -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
 }
 
@@ -936,6 +948,160 @@ body {
     font-size: 24px;
   }
 }
+@-webkit-keyframes pulse {
+  50% {
+    -webkit-box-shadow: 0 0 0 0.7rem rgba(255, 255, 255, 0.75);
+            box-shadow: 0 0 0 0.7rem rgba(255, 255, 255, 0.75);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0.7rem rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 0.7rem rgba(255, 255, 255, 0);
+  }
+}
+@keyframes pulse {
+  50% {
+    -webkit-box-shadow: 0 0 0 0.7rem rgba(255, 255, 255, 0.75);
+            box-shadow: 0 0 0 0.7rem rgba(255, 255, 255, 0.75);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0.7rem rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 0.7rem rgba(255, 255, 255, 0);
+  }
+}
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 10;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  text-align: center;
+  position: relative;
+  background: hsl(240deg, 2%, 12%);
+  margin: auto;
+  padding: 0;
+  border: 1px solid hsl(0deg, 0%, 22%);
+  border-radius: 20px;
+  width: 50%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  font-size: 4rem;
+  padding: 2px 5px;
+  background: -webkit-gradient(linear, left top, right bottom, from(hsl(0deg, 0%, 25%)), color-stop(50%, hsla(0deg, 0%, 25%, 0)));
+  background: linear-gradient(to bottom right, hsl(0deg, 0%, 25%) 0%, hsla(0deg, 0%, 25%, 0) 50%);
+  color: black;
+  border-radius: 14px;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  border-radius: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form .formItem {
+  padding: 10px;
+  font-size: 2rem;
+}
+form button {
+  -webkit-animation: pulse 1.5s ease-out infinite;
+          animation: pulse 1.5s ease-out infinite;
+  font-size: 1.4rem;
+  border: 3px solid hsla(0deg, 0%, 100%, 0.314);
+  border-radius: 1em;
+  margin-top: 2vh;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.125);
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+form button:hover {
+  background-color: green;
+}
+
+.modal-footer {
+  font-size: 4rem;
+  padding: 2px 5px;
+  border-radius: 14px;
+  background: hsl(240deg, 2%, 12%);
+  color: black;
+}
+
 @media (max-width: 1050px) {
   /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
   .wrapper {
