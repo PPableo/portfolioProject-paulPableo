@@ -339,7 +339,6 @@ main {
   -webkit-box-shadow: -4px 8px 24px hsla(0deg, 0%, 0%, 0.25);
           box-shadow: -4px 8px 24px hsla(0deg, 0%, 0%, 0.25);
   z-index: 1;
-  margin: 10px;
 }
 
 .upperNav {
@@ -945,6 +944,27 @@ body {
     font-size: 24px;
   }
 }
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
 @-webkit-keyframes pulse {
   50% {
     -webkit-box-shadow: 0 0 0 0.7rem rgba(255, 255, 255, 0.75);
@@ -1006,27 +1026,6 @@ body {
   animation-duration: 0.4s;
 }
 
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
 /* The Close Button */
 .close {
   color: white;
@@ -1164,8 +1163,18 @@ form button:hover {
     -webkit-transition: 2s ease-in-out;
     transition: 2s ease-in-out;
   }
+  .projectsList {
+    display: initial;
+  }
+  .projectsList .projectTitle {
+    text-align: center;
+    padding-left: 250px;
+  }
+  .projectsList .projectLinks {
+    padding-left: 250px;
+  }
 }
-@media (max-width: 500px) {
+@media (max-width: 510px) {
   /* all of our styles for MOBILE devices will go within this breakpoint */
   .skillSet li {
     width: 21%;
@@ -1182,5 +1191,15 @@ form button:hover {
     gap: 5px;
     -webkit-transition: 2s ease-in-out;
     transition: 2s ease-in-out;
+  }
+  .projectsList {
+    display: initial;
+  }
+  .projectsList .projectTitle {
+    display: none;
+  }
+  .projectsList .projectLinks {
+    margin-top: 120px;
+    padding: 0;
   }
 }

@@ -29,22 +29,23 @@
         -webkit-box-align: center;
         align-items: center;
         transition: 2s ease-in-out;
-      }
-
     }
-    
-    @media (max-width: 820px) {
-        /* all of our styles for TABLET devices will go within this breakpoint */
-        h2 {
-            font-size: 4rem;
-            margin: 0;
-            transition: 2s ease-in-out;
-        }
-        
 
-        .contactInfo {
-            transition: 2s ease-in-out;
-            display: none;
+}
+
+@media (max-width: 820px) {
+
+    /* all of our styles for TABLET devices will go within this breakpoint */
+    h2 {
+        font-size: 4rem;
+        margin: 0;
+        transition: 2s ease-in-out;
+    }
+
+
+    .contactInfo {
+        transition: 2s ease-in-out;
+        display: none;
     }
 
     .skillSet li {
@@ -61,11 +62,24 @@
         z-index: 1;
         gap: 5px;
         transition: 2s ease-in-out;
-      }
+    }
 
-}   
+    .projectsList {
+        display: initial;
 
-@media (max-width: 500px) {
+        .projectTitle {
+            text-align: center;
+            padding-left: 250px;
+        }
+
+        .projectLinks {
+            padding-left: 250px;
+        }
+    }
+}
+
+@media (max-width: 510px) {
+
     /* all of our styles for MOBILE devices will go within this breakpoint */
     .skillSet li {
         width: 21%;
@@ -81,5 +95,18 @@
         z-index: 1;
         gap: 5px;
         transition: 2s ease-in-out;
-      }
+    }
+
+    .projectsList {
+        display: initial;
+
+        .projectTitle {
+            display: none;
+        }
+
+        .projectLinks {
+            margin-top: 120px;
+            padding: 0;
+        }
+    }
 }
