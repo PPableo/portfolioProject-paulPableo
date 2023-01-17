@@ -58,3 +58,17 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+/* ------------------------------ PREVIEW HOVER ----------------------------- */
+
+const demos = document.querySelectorAll('video');
+
+demos.forEach((demo) => {
+  demo.addEventListener('mouseover', function (e) {
+    this.play();
+  });
+
+  demo.addEventListener('mouseleave', function (e) {
+    this.pause();
+  });
+});

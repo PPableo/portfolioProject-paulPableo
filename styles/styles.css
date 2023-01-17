@@ -383,7 +383,7 @@ main {
 }
 
 .upperNav-link {
-  color: hsla(0deg, 0%, 84%, 0.7);
+  color: hsl(0deg, 0%, 98%);
   font-size: 1.1rem;
   padding: 20px 7px;
   -webkit-transition: color 0.25s ease;
