@@ -68,9 +68,7 @@ Personal portfolio app created during Juno College Boot-camp. First iteration of
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This app is collaborative project with built using #react. We utilized 2 APIs and persistent data via Firebase to allow users to save User Avatar and score. We Utilized 2 REST API data via AJAX request to randomly generate avatar, as well as take user input for Trivia category, and difficulty.
-
-This app is designed to test your knowledge and challenge you with various questions from a range of categories. To start playing, simply enter your name to create an avatar, select a category from the main menu and choose your difficulty. The app will then present you with a series of multiple choice questions, and you can select your answer by tapping on one of the options. After you have answered all of the questions, the app will show you your score and give you the option to play again.
+Personal Portfolio - A responsive portfolio coded from scratch to match your chosen design that showcased our learning
  
 _For more examples, please refer to the [Documentation](https://example.com)_
 
